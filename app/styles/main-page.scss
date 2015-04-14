@@ -97,6 +97,7 @@
 		max-width: 98%;
 		max-height: 98%;
 		background-size: cover;
+		background-color: #444;
 
 		.project-logo {
 			margin: 0 0 45px 0;
@@ -463,4 +464,76 @@
 			}
 		}
 	}
+}
+
+@media (max-width: $screen-md-min) {
+	.blog-focus-on {
+		img {
+			padding: 10px 0;
+		}
+		.focus-description {
+			margin: 0 0 0 5px;
+		}
+	}
+	.blog-we-do {
+		.project-items {
+			height: 280px;
+
+			.project-title {
+				font-size: 18px;
+			}
+
+			.more {
+				bottom: 17px;
+			}
+		}
+		.project2 {
+			.project-title {
+				font-size: 16px;
+			}
+		}
+	}
+	.blog-partners-clients {
+		.link-show-secret {
+			font-size: 25px;
+		}
+	}
+	.block-social-links {
+		.wrapp-image {
+			img {
+				max-width: 98%;
+				height: auto;
+			}
+		}
+		.wrapp-social-links {
+			.social-icon {
+				margin: 13px 5px 35px 5px;
+			}
+		}
+	}
+}
+
+
+@media (max-width: $screen-xs-min) {
+	.blog-title {
+		font-size: 32px;
+		line-height: 116%;
+	}
+
+	.header-main-page {
+		.page-title {
+			h1 {
+				font-size: 35px;
+				line-height: 117%;
+			}
+		}
+	}
+
+	.blog-focus-on {
+		img {
+			padding: 20px 0;
+		}
+	}
+
+
 }
