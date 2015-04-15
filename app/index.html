@@ -180,18 +180,18 @@
     </div>
 
     <!-- we love what we do -->
-    <div class="blog-heart">
-        <div class="container block_first">
+    <div id="blog-heart" class="blog-heart">
+        <div id="block_first" class="container block_first">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-8">
                     <p class="text-question">Want to know a “secret” ingredient of our business?</p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <a class="link-show-secret" href="#show_secret" title="Yes, please!">Yes, please!</a>
+                <div class="col-xs-12 col-sm-4 col-md-4 wrapp-batton-show">
+                    <a id="link-show-secret" class="link-show-secret" href="#show_secret" title="Yes, please!">Yes, please!</a>
                 </div>
             </div>
         </div>
-        <div class="container block_second">
+        <div id="block_second" class="container block_second">
             <h2 class="blog-title text-center">we <strong>love</strong> what we do</h2>
             <p class="block-discrioption">
                 This is an extemely helpful tool to find solutipns to any problem we meet along the way. Enjoying our job means also staying creatively re
@@ -235,54 +235,77 @@
     </div>
 
     <!-- Contact us -->
-    <div class="block-contacts">
-        <div class="container">
-            <h2 class="blog-title text-center">Contact Us</h2>
-        </div>
+    <div id="block-contacts" class="block-contacts">
+        <h2 id="open-form" class="blog-title text-center">Contact Us</h2>
+        <form class="container contact-form" name="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <input type="text" name="" placeholder="First name"/>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <input type="text" name="" placeholder="Last name"/>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <input type="text" name="" placeholder="Email name"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <textarea placeholder="How can we help you?"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 row-button">
+                    <button class="link-send-message">Send message</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- social links -->
-    <div class="container block-social-links">
-        <div class="row">
-            <div class="col-xs-0 col-sm-2 col-md-2"></div>
-            <div class="col-xs-12 col-sm-2 col-md-2">
-                <div class="wrapp-social-links">
-                    <div class="wrapp-image">
-                        <img src="images/logos/activities/imaguru_black_2.png" alt="" title="">
-                    </div>
+    <div class="block-social-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-0 col-sm-2 col-md-2"></div>
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                    <div class="wrapp-social-links">
+                        <div class="wrapp-image">
+                            <img src="images/logos/activities/imaguru_black_2.png" alt="" title="">
+                        </div>
 
-                    <a class="social-icon facebook" href="#facebook" title="Facebook"></a>
-                    <a class="social-icon twitter" href="#twitter" title="twitter"></a>
-                    <a class="social-icon instagram" href="#instagram" title="Instagram"></a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2">
-                <div class="wrapp-social-links">
-                    <div class="wrapp-image">
-                        <img src="images/logos/activities/Logo_Startup_2.png" alt="" title="">
+                        <a class="social-icon facebook" href="#facebook" title="Facebook"></a>
+                        <a class="social-icon twitter" href="#twitter" title="twitter"></a>
+                        <a class="social-icon instagram" href="#instagram" title="Instagram"></a>
                     </div>
-                    <a class="social-icon facebook" href="#facebook" title="Facebook"></a>
-                    <a class="social-icon twitter" href="#twitter" title="twitter"></a>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2">
-                <div class="wrapp-social-links">
-                    <div class="wrapp-image">
-                        <img src="images/logos/activities/GEW_main_horizontal_2.png" alt="" title="">
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                    <div class="wrapp-social-links">
+                        <div class="wrapp-image">
+                            <img src="images/logos/activities/Logo_Startup_2.png" alt="" title="">
+                        </div>
+                        <a class="social-icon facebook" href="#facebook" title="Facebook"></a>
+                        <a class="social-icon twitter" href="#twitter" title="twitter"></a>
                     </div>
-                    <a class="social-icon facebook" href="#facebook" title="Facebook"></a>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-md-2">
-                <div class="wrapp-social-links">
-                    <div class="wrapp-image">
-                        <img src="images/logos/what_we_do/Logo_Belbiz_Black-2.png" alt="" title="">
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                    <div class="wrapp-social-links">
+                        <div class="wrapp-image">
+                            <img src="images/logos/activities/GEW_main_horizontal_2.png" alt="" title="">
+                        </div>
+                        <a class="social-icon facebook" href="#facebook" title="Facebook"></a>
                     </div>
-                    <a class="social-icon facebook" href="#facebook" title="Facebook"></a>
-                    <a class="social-icon twitter" href="#twitter" title="twitter"></a>
                 </div>
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                    <div class="wrapp-social-links">
+                        <div class="wrapp-image">
+                            <img src="images/logos/what_we_do/Logo_Belbiz_Black-2.png" alt="" title="">
+                        </div>
+                        <a class="social-icon facebook" href="#facebook" title="Facebook"></a>
+                        <a class="social-icon twitter" href="#twitter" title="twitter"></a>
+                    </div>
+                </div>
+                <div class="col-xs-0 col-sm-2 col-md-2"></div>
             </div>
-            <div class="col-xs-0 col-sm-2 col-md-2"></div>
         </div>
     </div>
 

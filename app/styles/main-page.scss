@@ -1,7 +1,3 @@
-.sprite-icons {
-	background-image: url("../images/icons/sprite_icons.png");
-	background-repeat: no-repeat;
-}
 .big-bg {
 	background: url('../images/pictures/home.jpg') no-repeat;
 }
@@ -29,7 +25,7 @@
 			border: 1px solid #fff;
 			color: #fff;
 			font: 16px/119% "Raleway-Bold";
-			border-radius: 4px;
+			border-radius: 2px;
 
 			-webkit-transition: all 0.2s ease;
 		     -moz-transition: all 0.2s ease;
@@ -42,7 +38,6 @@
 			}
 			&:hover {
 				border-color: #E46E2E;
-				border-radius: 2px;
 				background: #E46E2E;
 
 				-webkit-transition: all 0.2s ease;
@@ -248,9 +243,18 @@
 
 .blog-heart {
 	background: #ee4a4a;
+	min-height: 225px;
 
-	&.show-secret {
-		background: url("../images/icons/heart.png") center 270px no-repeat;
+	&.content-showed {
+		background: #ee4a4a url("../images/icons/heart.png") center 270px no-repeat;
+
+		.block_first {
+			display: none;
+		}
+		.block_second {
+			display: block;
+		}
+
 	}
 
 	.block_first {
@@ -376,16 +380,101 @@
 
 /* Contact Us */
 .block-contacts {
-	padding: 25px 0 49px 0;
-	background: #f27735;
+	margin-bottom: 100px;
+
+	&.form-opened {
+		.contact-form {
+			display: block;
+		}
+		.blog-title {
+			color: #362C2C;
+			background: #fff;
+		}
+	}
 
 	.blog-title {
 		color: #fff;
+		padding-top: 45px;
+		padding-bottom: 59px;
+		margin: 0;
+		background: #f27735;
+		cursor: pointer;
+	}
+	
+	.contact-form {
+		display: none;
+
+		input, textarea {
+			width: 100%;
+			margin: 15px 0;
+			border: 0;
+			padding: 20px;
+			border-radius: 1px;
+			color: #adadad;
+			font: 16px/119% "Raleway";
+			background: #f2f2f2;
+			outline: none;
+		}
+		textarea {
+			min-height: 229px;
+			max-width: 100%;
+		}
+		.row-button {
+			text-align: center;
+
+			.link-send-message {
+				position: relative;
+				padding: 18px 20px 18px 56px;
+				border: 1px solid #E46E2E;
+				color: #E46E2E;
+				font: 16px/119% "Raleway-Bold";
+				border-radius: 2px;
+				outline: none;
+				background: #fff;
+
+				-webkit-transition: all 0.2s ease;
+			     -moz-transition: all 0.2s ease;
+			       -o-transition: all 0.2s ease;
+			      -ms-transition: all 0.2s ease;
+			          transition: all 0.2s ease;
+
+				&:hover {
+					border-color: #E46E2E;
+					color: #fff;
+					background: #E46E2E;
+
+					-webkit-transition: all 0.2s ease;
+				     -moz-transition: all 0.2s ease;
+				       -o-transition: all 0.2s ease;
+				      -ms-transition: all 0.2s ease;
+				          transition: all 0.2s ease;
+
+				    &:before {
+				    	background-position: -28px -46px;
+				    }
+				}
+				&:before {
+					position: absolute;
+					top: 16px;
+  					left: 22px;
+					display: inline-block;
+					width: 23px;
+					height: 24px;
+					content: "";
+					background-image: url("../images/icons/sprite_icons.png");
+					background-repeat: no-repeat;
+					background-position: -1px -46px;
+				}
+			}
+		}
 	}
 }
+
+/* Copyright */
 .block-copyright {
 	padding: 27px 0 40px 0;
 	text-align: center;
+	background: #f8f9f9;
 
 	p {
 		padding: 0 0 11px 0;
@@ -405,8 +494,11 @@
 	}
 }
 
-
+/* Social links */
 .block-social-links {
+	background: #f8f9f9;
+	border-top: 1px solid #f1f1f1;
+
 	.wrapp-social-links {
 		text-align: center;
 
@@ -511,6 +603,36 @@
 			}
 		}
 	}
+	.block-testimonials {
+		.carousel {
+			.item {
+				.person-info {
+					.photo {
+						float: none;
+					}
+					.person-name,
+					.position {
+						margin-left: 0;
+					}
+				}
+			}
+			.carousel-control {
+				top: 40px;
+
+				&.left {
+					left: 20px;
+				}
+				&.right {
+					right: 20px;
+				}
+			}
+			.carousel-caption {
+				padding-left: 65px;
+				padding-right: 65px;
+			}
+
+		}
+	}
 }
 
 
@@ -535,5 +657,27 @@
 		}
 	}
 
-
+	.blog-heart {
+		&.content-showed {
+			background-position: center 106px;
+		}
+		.block_first {
+			.text-question {
+				padding-left: 15px;
+				padding-right: 15px;
+				font-size: 30px;
+				text-align: center;
+			}
+			.wrapp-batton-show {
+				text-align: center;
+			}
+		}
+		.block_second {
+			  padding: 135px 0 175px 0px;
+			.blog-title {
+				font: 44px/118% "Raleway";
+				margin: 0 0 93px 0;
+			}
+		}
+	}
 }

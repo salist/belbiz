@@ -1,1 +1,1 @@
-"use strict";document.querySelector("#nav-toggle").addEventListener("click",function(){this.classList.toggle("active")});
+"use strict";document.querySelector("#nav-toggle").addEventListener("click",function(){this.classList.toggle("active")}),function(){var n=$("#link-show-secret"),t=$("#blog-heart");n.on("click",function(){t.addClass("content-showed")})}(),function(){var n=$("#block-contacts"),t=$("#open-form");t.on("click",function(){n.addClass("form-opened")})}();
