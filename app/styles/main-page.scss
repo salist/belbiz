@@ -162,6 +162,13 @@
 	padding: 50px 0;
 	background: #f8f9f9;
 
+
+	a {
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
 	.blog-title {
 		margin-bottom: 67px;
 	}
