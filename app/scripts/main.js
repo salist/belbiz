@@ -2,9 +2,14 @@
 /*
 *CSS Animated Hamburger Icon (click on hamburger)
 */
-document.querySelector( '#nav-toggle' ).addEventListener( 'click', function() {
-    this.classList.toggle( 'active' );
-});
+(function() {
+	var $navToggle = $('#nav-toggle');
+	if($navToggle.lenght > 0) {
+		$navToggle.on( 'click', function() {
+		    this.classList.toggle( 'active' );
+		});
+	}
+}());
 
 /*
 * Show contect in main page. Block about "secret"
@@ -18,6 +23,9 @@ document.querySelector( '#nav-toggle' ).addEventListener( 'click', function() {
 	});
 }());
 
+/*
+* Show contect in main page. Form of contact
+*/
 (function() {
 	var $blockContacts = $('#block-contacts'),
 		$openForm = $('#open-form');

@@ -1,5 +1,5 @@
 .big-bg {
-	background: url('../images/pictures/home.jpg') no-repeat;
+	background: #323232 url('../images/pictures/home.jpg') no-repeat;
 }
 
 .header-main-page {
@@ -22,6 +22,7 @@
 		.link-get-invoved {
 			display: inline-block;
 			padding: 18px 20px;
+			margin: 0 10px;
 			border: 1px solid #fff;
 			color: #fff;
 			font: 16px/119% "Raleway-Bold";
@@ -127,11 +128,11 @@
 		}
 	}
 	.project1 {
-		background: url("../images/pictures/imaguru.png") center no-repeat;
+		background: #323232 url("../images/pictures/imaguru.png") center no-repeat;
 	}
 	.project2 {
 		padding-top: 30px;
-		background: url("../images/pictures/imaguru_eu.png") center no-repeat;
+		background: #323232 url("../images/pictures/imaguru_eu.png") center no-repeat;
 
 		.project-title {
 			font-size: 20px;
@@ -142,14 +143,14 @@
 		}
 	}
 	.project3 {
-		background: url("../images/pictures/techminsk.png") center no-repeat;		
+		background: #323232 url("../images/pictures/techminsk.png") center no-repeat;		
 
 		.project-logo {
 			margin: 0 0 40px 0;
 		}
 	}
 	.project4 {
-		background: url("../images/pictures/belbiz.png") center no-repeat;	
+		background: #323232 url("../images/pictures/belbiz.png") center no-repeat;	
 
 		.project-logo {
 			margin: 0 0 65px 0;
@@ -174,6 +175,7 @@
 	}
 
 	.activities-items {
+		display: block;
 		width: 218px;
 		max-width: 98%;
 		min-height: 325px;
@@ -325,8 +327,9 @@
 		text-align: center;
 		.person-info {
 			display: inline-block;
-			text-align: center;
 			min-width: 235px;
+			max-width: 450px;
+			text-align: left;
 
 			.photo {
 				width: 80px;
@@ -614,6 +617,8 @@
 		.carousel {
 			.item {
 				.person-info {
+					text-align: center;
+
 					.photo {
 						float: none;
 					}
