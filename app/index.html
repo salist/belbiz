@@ -14,6 +14,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery.bxslider.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -154,7 +155,18 @@
     <div class="container blog-partners-clients">
         <h2 class="blog-title text-center"><span>Thanks</span> to Our Partners and Clients!</h2>
         <div class="wrapp-partners-clients">
-            <a href="#" title="">
+
+            <div class="slider1">
+              <div class="slide"><img src="images/logos/partners/garage48.png"></div>
+              <div class="slide"><img src="images/logos/partners/ie.png"></div>
+              <div class="slide"><img src="images/logos/partners/ifc.png"></div>
+              <div class="slide"><img src="images/logos/partners/microsoft.png"></div>
+              <div class="slide"><img src="images/logos/partners/sauna.png"></div>
+              <div class="slide"><img src="images/logos/partners/startup_wise.png"></div>
+              <div class="slide"><img src="images/logos/partners/usaid.png"></div>
+            </div>
+
+            <!-- <a href="#" title="">
                 <img src="images/logos/partners/garage48.png" alt="" title="">
             </a>
             <a href="#" title="">
@@ -174,7 +186,7 @@
             </a>
             <a href="#" title="">
                 <img src="images/logos/partners/usaid.png" alt="" title="">
-            </a>
+            </a> -->
         </div>
     </div>
 
@@ -351,6 +363,20 @@
 
         <script type="text/javascript">
             $('.carousel').carousel()
+        </script>
+
+        <!-- responsive carousel -->
+        <script type="text/javascript" src="libs/jquery.bxslider.min.js"></script>
+        <!-- init carousel -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.slider1').bxSlider({
+                slideWidth: 200,
+                minSlides: 1,
+                maxSlides: 5,
+                slideMargin: 40
+              });
+            });
         </script>
 </body>
 </html>

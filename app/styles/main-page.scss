@@ -22,7 +22,7 @@
 		.link-get-invoved {
 			display: inline-block;
 			padding: 18px 20px;
-			margin: 0 10px;
+			margin: 10px;
 			border: 1px solid #fff;
 			color: #fff;
 			font: 16px/119% "Raleway-Bold";
@@ -221,6 +221,8 @@
 	}
 
 	.wrapp-partners-clients {
+		width: 85%;
+  		margin: 0 auto;
 		text-align: center;
 
 		a {
@@ -667,6 +669,11 @@
 		img {
 			padding: 20px 0;
 		}
+		.focus-description {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
 	}
 
 	.blog-heart {
@@ -692,4 +699,10 @@
 			}
 		}
 	}
+	.blog-partners-clients .bx-wrapper .bx-prev {
+		left: -10px;
+	}
+	.blog-partners-clients .bx-wrapper .bx-next {
+  		right: -10px;
+  	}
 }
