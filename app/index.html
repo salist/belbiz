@@ -21,7 +21,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body class="main-page">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -30,18 +30,18 @@
     <div class="big-bg">
         <div class="container header-main-page">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 text-left">
-                    <img class="main-logo" src="images/logos/what_we_do/Logo_Belbiz_Black-2.png" alt="Bel.biz" title="Bel.biz">
+                <div class="col-xs-6 col-sm-6 text-left">
+                    <a href="/"><img class="main-logo" src="images/logos/what_we_do/Logo_Belbiz_Black-2.png" alt="Bel.biz" title="Bel.biz"></a>
                 </div>
-                <!-- <div class="col-xs-6 col-sm-6 text-right">
+                <div class="col-xs-6 col-sm-6 text-right">
                     <a id="nav-toggle" href="#"><span></span></a>
-                </div> -->
+                </div>
             </div>
             <div class="page-title">
                 <h1 >Impossible is nothing</h1>
-                <a class="link-get-invoved" href="#get_involved" title="Get involved">Get involved</a>
-                <a class="link-get-invoved" href="#get_involved" title="Get involved">Get involved</a>
-                <a class="link-get-invoved" href="#get_involved" title="Get involved">Get involved</a>
+                <a class="link-get-invoved" href="partner.html" title="Get involved">Become our partner</a><br>
+                <a class="link-get-invoved" href="speaker-mentor.html" title="Get involved">Become our speaker/mentor</a><br>
+                <a class="link-get-invoved" href="programs.html" title="Get involved">Sign up for our programs</a>
             </div>
         </div>
     </div>
@@ -165,28 +165,6 @@
               <div class="slide"><img src="images/logos/partners/startup_wise.png"></div>
               <div class="slide"><img src="images/logos/partners/usaid.png"></div>
             </div>
-
-            <!-- <a href="#" title="">
-                <img src="images/logos/partners/garage48.png" alt="" title="">
-            </a>
-            <a href="#" title="">
-                <img src="images/logos/partners/ie.png" alt="" title="">
-            </a>
-            <a href="#" title="">
-                <img src="images/logos/partners/ifc.png" alt="" title="">
-            </a>
-            <a href="#" title="">
-                <img src="images/logos/partners/microsoft.png" alt="" title="">
-            </a>
-            <a href="#" title="">
-                <img src="images/logos/partners/sauna.png" alt="" title="">
-            </a>
-            <a href="#" title="">
-                <img src="images/logos/partners/startup_wise.png" alt="" title="">
-            </a>
-            <a href="#" title="">
-                <img src="images/logos/partners/usaid.png" alt="" title="">
-            </a> -->
         </div>
     </div>
 
@@ -256,7 +234,7 @@
     </div>
 
     <!-- Contact us -->
-    <div id="block-contacts" class="block-contacts">
+    <div id="block-contacts" class="block-contacts formFileds">
         <h2 id="open-form" class="blog-title text-center">Contact Us</h2>
         <form class="container contact-form" name="">
             <div class="row">
@@ -343,18 +321,9 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+        <script type="text/javascript" src="libs/jquery.bxslider.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
@@ -364,9 +333,7 @@
         <script type="text/javascript">
             $('.carousel').carousel()
         </script>
-
-        <!-- responsive carousel -->
-        <script type="text/javascript" src="libs/jquery.bxslider.min.js"></script>
+        
         <!-- init carousel -->
         <script type="text/javascript">
             $(document).ready(function(){

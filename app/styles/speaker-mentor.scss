@@ -1,0 +1,58 @@
+//page-get-ivolved.scss
+
+
+.page-get-ivolved {
+.big-bg {
+	height: auto;
+	background-image: url('../images/pictures/call_for_speakers.jpg');
+}
+
+
+/* Header */
+.header-main-page{
+	.page-title {
+		position: static;
+		margin: 0 auto;
+
+		h1 {
+			margin-bottom: 290px;
+			font: 50px/118% 'Raleway-Bold';
+		}
+	}
+}
+/* article */
+.article {
+	margin: -248px auto 0;
+	padding: 67px 64px;
+	border-radius: 1px;
+	max-width: 760px;
+	background: #fff;
+
+	h2 {
+		margin-bottom: 35px;
+		font: 40px/118% 'Raleway-Bold';
+		color: #362C2C;
+		
+		&.blog-title {
+		  font: 40px/119% "Raleway-Light";
+		}
+	}
+
+	p, ul, li, p ul, p li, p a {
+		font: 16px/157% "Raleway";
+	}
+	p {
+		margin-bottom: 0;
+		color: #362C2C;
+	}
+	ul {
+		margin: 20px 0;
+	}
+} 
+
+/* From */
+.block-form-get-ivolved {
+	margin-bottom: 100px;
+}
+
+}

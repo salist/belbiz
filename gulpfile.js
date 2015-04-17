@@ -22,7 +22,6 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
-
 gulp.task('jshint', function () {
   return gulp.src('app/scripts/**/*.js')
     .pipe(reload({stream: true, once: true}))

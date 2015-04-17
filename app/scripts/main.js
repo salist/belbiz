@@ -4,7 +4,7 @@
 */
 (function() {
 	var $navToggle = $('#nav-toggle');
-	if($navToggle.lenght > 0) {
+	if($navToggle.length > 0) {
 		$navToggle.on( 'click', function() {
 		    this.classList.toggle( 'active' );
 		});

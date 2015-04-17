@@ -1,5 +1,5 @@
-.big-bg {
-	background: #323232 url('../images/pictures/home.jpg') no-repeat;
+.main-page .big-bg {
+	background-image: url('../images/pictures/home.jpg');
 }
 
 .header-main-page {
@@ -10,7 +10,7 @@
 		position: absolute;
 		top: 50%;
 		width: 100%;
-		margin-top: -105px;
+		margin-top: -215px;
 		text-align: center;
 
 		h1 {
@@ -21,6 +21,8 @@
 
 		.link-get-invoved {
 			display: inline-block;
+			min-width: 270px;
+			max-width: 97%;
 			padding: 18px 20px;
 			margin: 10px;
 			border: 1px solid #fff;
@@ -416,69 +418,6 @@
 	.contact-form {
 		display: none;
 
-		input, textarea {
-			width: 100%;
-			margin: 15px 0;
-			border: 0;
-			padding: 20px;
-			border-radius: 1px;
-			color: #adadad;
-			font: 16px/119% "Raleway";
-			background: #f2f2f2;
-			outline: none;
-		}
-		textarea {
-			min-height: 229px;
-			max-width: 100%;
-		}
-		.row-button {
-			text-align: center;
-
-			.link-send-message {
-				position: relative;
-				padding: 18px 20px 18px 56px;
-				border: 1px solid #E46E2E;
-				color: #E46E2E;
-				font: 16px/119% "Raleway-Bold";
-				border-radius: 2px;
-				outline: none;
-				background: #fff;
-
-				-webkit-transition: all 0.2s ease;
-			     -moz-transition: all 0.2s ease;
-			       -o-transition: all 0.2s ease;
-			      -ms-transition: all 0.2s ease;
-			          transition: all 0.2s ease;
-
-				&:hover {
-					border-color: #E46E2E;
-					color: #fff;
-					background: #E46E2E;
-
-					-webkit-transition: all 0.2s ease;
-				     -moz-transition: all 0.2s ease;
-				       -o-transition: all 0.2s ease;
-				      -ms-transition: all 0.2s ease;
-				          transition: all 0.2s ease;
-
-				    &:before {
-				    	background-position: -28px -46px;
-				    }
-				}
-				&:before {
-					position: absolute;
-					top: 16px;
-  					left: 22px;
-					display: inline-block;
-					width: 23px;
-					height: 24px;
-					content: "";
-					background-image: url("../images/icons/sprite_icons.png");
-					background-repeat: no-repeat;
-					background-position: -1px -46px;
-				}
-			}
-		}
 	}
 }
 
@@ -568,141 +507,4 @@
 			}
 		}
 	}
-}
-
-@media (max-width: $screen-md-min) {
-	.blog-focus-on {
-		img {
-			padding: 10px 0;
-		}
-		.focus-description {
-			margin: 0 0 0 5px;
-		}
-	}
-	.blog-we-do {
-		.project-items {
-			height: 280px;
-
-			.project-title {
-				font-size: 18px;
-			}
-
-			.more {
-				bottom: 17px;
-			}
-		}
-		.project2 {
-			.project-title {
-				font-size: 16px;
-			}
-		}
-	}
-	.blog-partners-clients {
-		.link-show-secret {
-			font-size: 25px;
-		}
-	}
-	.block-social-links {
-		.wrapp-image {
-			img {
-				max-width: 98%;
-				height: auto;
-			}
-		}
-		.wrapp-social-links {
-			.social-icon {
-				margin: 13px 5px 35px 5px;
-			}
-		}
-	}
-	.block-testimonials {
-		.carousel {
-			.item {
-				.person-info {
-					text-align: center;
-
-					.photo {
-						float: none;
-					}
-					.person-name,
-					.position {
-						margin-left: 0;
-					}
-				}
-			}
-			.carousel-control {
-				top: 40px;
-
-				&.left {
-					left: 20px;
-				}
-				&.right {
-					right: 20px;
-				}
-			}
-			.carousel-caption {
-				padding-left: 65px;
-				padding-right: 65px;
-			}
-
-		}
-	}
-}
-
-
-@media (max-width: $screen-xs-min) {
-	.blog-title {
-		font-size: 32px;
-		line-height: 116%;
-	}
-
-	.header-main-page {
-		.page-title {
-			h1 {
-				font-size: 35px;
-				line-height: 117%;
-			}
-		}
-	}
-
-	.blog-focus-on {
-		img {
-			padding: 20px 0;
-		}
-		.focus-description {
-			display: block;
-			margin: 0 auto;
-			text-align: center;
-		}
-	}
-
-	.blog-heart {
-		&.content-showed {
-			background-position: center 106px;
-		}
-		.block_first {
-			.text-question {
-				padding-left: 15px;
-				padding-right: 15px;
-				font-size: 30px;
-				text-align: center;
-			}
-			.wrapp-batton-show {
-				text-align: center;
-			}
-		}
-		.block_second {
-			  padding: 135px 0 175px 0px;
-			.blog-title {
-				font: 44px/118% "Raleway";
-				margin: 0 0 93px 0;
-			}
-		}
-	}
-	.blog-partners-clients .bx-wrapper .bx-prev {
-		left: -10px;
-	}
-	.blog-partners-clients .bx-wrapper .bx-next {
-  		right: -10px;
-  	}
 }
