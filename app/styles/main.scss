@@ -13,6 +13,9 @@ $icon-font-path: '../fonts/';
 html, body {
 	height: 100%
 }
+body {
+	position: relative;
+}
 .big-bg {
 	z-index: -1;
 	width: 100%;
@@ -27,7 +30,8 @@ html, body {
 }
 
 /* CSS Animated Hamburger Icon */
-#nav-toggle {
+.nav-toggle {
+	z-index:100;
 	position: absolute; 
 	right: 10px; 
 	top: 35px;
@@ -147,6 +151,69 @@ html, body {
 }
 /* End form */
 
+
+/* fixed menu */
+.vertical-menu {
+	z-index: 100;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	bottom: 0;
+	padding: 40px;
+	background: #242220;
+
+	ul {
+		margin: 0 0 25px 0;
+		padding: 0 0 10px 0;
+		border-bottom: 1px solid #a5a4a4;
+
+		li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			a {
+				display: inline-block;
+				margin: 0 0 25px 0;
+				color: #a5a4a4;
+				font: 16px/119% 'Raleway-Bold';
+				text-transform: uppercase;
+
+				&:hover {
+					color: #e3e3e3;
+					text-decoration: none;
+				}
+
+			}
+		}
+	}
+}
+.menuShowed {
+	.vertical-menu {
+		right: 0;
+	}
+	.nav-toggle {
+		right: 252px;
+	}
+	.nav-toggle,
+	.vertical-menu {
+		-webkit-transition: right 0.4s ease;
+		   -moz-transition: right 0.4s ease;
+		     -o-transition: right 0.4s ease;
+		    -ms-transition: right 0.4s ease;
+		        transition: right 0.4s ease;
+	}
+}
+.nav-toggle,
+.vertical-menu {
+	-webkit-transition: right 0.4s ease;
+	   -moz-transition: right 0.4s ease;
+	     -o-transition: right 0.4s ease;
+	    -ms-transition: right 0.4s ease;
+	        transition: right 0.4s ease;
+}
+/* end fixed menu */
 
 /* Pages */
 @import "main-page.scss";

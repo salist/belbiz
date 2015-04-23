@@ -35,3 +35,17 @@
 	});
 
 }());
+
+
+/*
+* Show fixed menu
+*/
+(function() {
+
+	var $verticalMenu = $('#nav-toggle');
+
+	$verticalMenu.on('click', function(){
+		$('body').toggleClass('menuShowed');
+	});
+
+}());
