@@ -32,10 +32,15 @@
             <li><a href="partner.html" title="Become our partner">Become our partner</a></li>
             <li><a href="speaker-mentor.html" title="Get involved">Become our speaker/mentor</a></li>
             <li><a href="programs.html" title="Sign up for our programs">Sign up for our programs</a></li>
-            <li><a href="#" title="What we do">What we do</a></li>
-            <li><a href="#" title="Events">Events</a></li>
-            <li><a href="#" title="Our Partners and Clients">Our Partners and Clients</a></li>
-            <li><a href="#" title="Testimonials">Testimonials</a></li>
+            <li><a href="#anchor-what-we-do" title="What we do">What we do</a></li>
+            <li><a href="#anchor-events" title="Events">Events</a></li>
+            <li><a href="#anchor-partners-clients" title="Our Partners and Clients">Our Partners and Clients</a></li>
+            <li><a href="#anchor-testimonials" title="Testimonials">Testimonials</a></li>
+        </ul>
+        <ul class="another-links">
+            <li><a href="team.html" title="Team">Team</a></li>
+            <li><a href="blog.html" title="Blog">Blog</a></li>
+            <li><a href="meadia.html" title="Meadi">Media</a></li>
         </ul>
     </div>
     <!-- Header -->
@@ -86,7 +91,7 @@
     </div>
 
     <!-- What we do -->
-    <div class="container blog-we-do">
+    <div id="anchor-what-we-do" class="container blog-we-do">
         <h2 class="blog-title text-center">What We Do</h2>
         <div class="row text-center">
             <div class="col-xs-0 col-sm-2 col-md-2"></div>            
@@ -127,7 +132,7 @@
     </div>
 
     <!-- Take Part in Our Activities -->
-    <div class="blog-activities">
+    <div id="anchor-events" class="blog-activities">
         <div class="container">
             <h2 class="blog-title text-center">Take Part in Our Activities</h2>
             <div class="row">
@@ -164,7 +169,7 @@
     </div>
 
     <!-- Thanks to Our Partners and Clients! -->
-    <div class="container blog-partners-clients">
+    <div id="anchor-partners-clients" class="container blog-partners-clients">
         <h2 class="blog-title text-center"><span>Thanks</span> to Our Partners and Clients!</h2>
         <div class="wrapp-partners-clients">
 
@@ -201,7 +206,7 @@
     </div>
 
     <!-- Testimonials -->
-    <div class="container block-testimonials">
+    <div id="anchor-testimonials" class="container block-testimonials">
         <h2 class="blog-title text-center">Testimonials</h2>
 
         <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
@@ -322,7 +327,7 @@
 
     <!-- Copyright -->
     <div class="block-copyright">
-        <p><a href="mailto:halo@bel.biz" target="_top">hello@bel.biz</a></p>
+        <p><a href="mailto:hello@bel.biz" target="_top">hello@bel.biz</a></p>
         <p>Bel.biz &copy; 2005-2015</p>
     </div>
 
@@ -343,7 +348,9 @@
         <!-- endbuild -->
 
         <script type="text/javascript">
-            $('.carousel').carousel()
+            $('.carousel').carousel({
+                interval: 0
+            })
         </script>
         
         <!-- init carousel -->

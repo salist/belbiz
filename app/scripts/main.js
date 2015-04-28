@@ -40,12 +40,25 @@
 /*
 * Show fixed menu
 */
-(function() {
 
+(function() {
 	var $verticalMenu = $('#nav-toggle');
 
 	$verticalMenu.on('click', function(){
 		$('body').toggleClass('menuShowed');
 	});
 
+}());
+
+
+/* scroll to  */
+(function() {
+   $('a[href^="#anchor-"]').click(function(){
+        var target = $(this).attr('href');
+
+        if( target !== '#' ) {
+        	$('html, body').animate({scrollTop: $(target).offset().top}, 500);
+        	return false; 
+        }
+   }); 
 }());

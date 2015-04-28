@@ -113,15 +113,20 @@
 			text-align: center;
 			
 			a {
+				position: relative;
+				padding: 0 15px 0 0;
 				color: #E46E2E;	
 
 				&:after{
+					position: absolute;
+					right: 0;
 					width: 10px;
 					height: 10px;
-					content: '>>';
+					content: '\203A\203A';
 					display: inline-block;
 				}
-				&:hove, 
+
+				&:hover, 
 				&:active {
 					color: #E46E2E;	
 					text-decoration: none;
@@ -285,11 +290,22 @@
 			border-radius: 2px;
 			color: #fff;
 			font: 32px/37px "Raleway-SemiBold";
+			-webkit-transition: all 0.5s ease;
+		     -moz-transition: all 0.5s ease;
+		       -o-transition: all 0.5s ease;
+		      -ms-transition: all 0.5s ease;
+		          transition: all 0.5s ease;
 
 			&:hover,
 			&:active {
-				background: #EE4A4A;
+				background: #fff;
+				color: #EE4A4A;
 				text-decoration: none;
+				-webkit-transition: all 0.5s ease;
+			     -moz-transition: all 0.5s ease;
+			       -o-transition: all 0.5s ease;
+			      -ms-transition: all 0.5s ease;
+			          transition: all 0.5s ease;
 			}
 			&:visited,
 			&:focus {

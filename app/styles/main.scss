@@ -154,7 +154,7 @@ body {
 
 /* fixed menu */
 .vertical-menu {
-	z-index: 100;
+	z-index: 10000;
 	overflow: auto;
 	position: fixed;
 	top: 0;
@@ -188,6 +188,13 @@ body {
 			}
 		}
 	}
+	.another-links {
+		border: 0;
+
+		a {
+			text-transform: none;
+		}
+	}
 }
 .menuShowed {
 	.vertical-menu {
@@ -219,6 +226,8 @@ body {
 @import "main-page.scss";
 
 @import "speaker-mentor.scss";
+
+@import "blog.scss";
 
 
 
