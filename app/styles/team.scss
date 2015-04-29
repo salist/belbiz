@@ -1,0 +1,122 @@
+.page-team {
+	.big-bg {
+	  background-image: url('../images/pictures/team.jpg');
+	}
+
+	.header-main-page {
+		.page-title {
+			margin-top: -50px;
+
+			h1 {
+				font: 88px/119% "Raleway";
+			}
+		}
+	}
+
+	.blog-title {
+		margin: 75px 0 65px 0;
+	}
+
+	.blog-meet-our-team {
+		.wrapp-member-team {
+			max-width: 300px;
+			margin: 0 auto;
+			.wrapp-img {
+				position: relative;
+				margin: 0 0 30px 0;
+
+				img {
+					max-width: 100%; 
+				}
+
+				.social-links {
+					position: absolute; 
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background: rgba(228,110,46, 0.7);
+					font-size: 0;
+					text-align: center;
+					line-height: 233px;
+					opacity: 0;
+					transition: opacity 400ms ease-in-out;
+
+					.links {
+						display: inline-block;
+						width: 54px;
+						height: 54px;
+						margin: 0 10px;
+						vertical-align: middle;
+					}
+
+					.socil-link-fb  {
+						background: url("../images/icons/facebook.png") no-repeat;
+					}
+					.socil-link-in  {
+						background: url("../images/icons/linkedin.png") no-repeat;
+					}
+				}
+
+				&:hover {
+					.social-links {
+						opacity: 1;
+						transition: opacity 400ms ease-in-out;
+					}
+				}
+
+
+			}
+
+			.member-name {
+				margin: 0 0 15px 0;
+				color: #535758;
+				font: 20px/119% "Raleway";
+			}
+			.addition-info {
+				font-size: 0;
+
+				.member-position {
+					margin: 0 17px 0 0;
+					color: #919191;
+					font: 16px/119% "Raleway";
+				}
+				.member-email {
+					color: #E46E2E;
+					font: 16px/119% "Raleway";
+				}
+
+				p {
+					padding-top: 20px;
+					margin: 0;
+					color: #362C2C;
+  					font: 16px/157% 'Raleway';
+				}
+			}
+		}
+
+		.another-members {
+			padding-top: 80px;
+
+			.wrapp-member-team {
+				display: inline-block;
+				max-width: 240px;
+
+				.social-links {
+					  line-height: 190px;
+				}
+			}
+
+			.addition-info  {
+				.member-position {
+					border-bottom: 1px solid #e5e5e5;
+					padding-bottom: 18px;
+					margin: 0 0 15px 0;
+				}
+				.member-email {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

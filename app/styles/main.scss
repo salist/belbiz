@@ -231,6 +231,8 @@ body {
 
 @import "media.scss";
 
+@import "team.scss"; 
+
 
 @media (max-width: $screen-md-min) {
 	.blog-focus-on {
@@ -335,6 +337,28 @@ body {
 				min-height: inherit;
 			}
 		}
+
+
+	}
+
+	.page-team {
+		.header-main-page .page-title h1 {
+			font-size: 35px;
+			line-height: 117%;
+		}
+		.blog-meet-our-team  {
+			.another-members {
+				.wrapp-member-team {
+					display: block;
+					margin-bottom: 25px;
+				}
+			}
+
+			.wrapp-member-team {
+				margin-bottom: 25px;
+			}
+		}
+
 	}
 	.block-social-links {
 		.wrapp-image {
