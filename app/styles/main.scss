@@ -229,6 +229,7 @@ body {
 
 @import "blog.scss";
 
+@import "media.scss";
 
 
 @media (max-width: $screen-md-min) {
@@ -316,13 +317,41 @@ body {
 			}
 		}
 	}
+
+	.page-media {
+		.download-logo {
+			margin-bottom:15px;
+		}
+		.block-about-us {
+			.wrapp-news {
+  				padding: 0 0 15px 0;
+			}
+		}
+		.block-our-honors {
+			.blog-title {
+				margin-top: 100px;
+			}
+			.wrapp-honor {
+				min-height: inherit;
+			}
+		}
+	}
+	.block-social-links {
+		.wrapp-image {
+			padding-top: 15px;
+		}
+	}
 }
 
+.blog-title {
+	text-align: center;
+}
 
 @media (max-width: $screen-xs-min) {
 	.blog-title {
 		font-size: 32px;
 		line-height: 116%;
+
 	}
 
 	.header-main-page {
