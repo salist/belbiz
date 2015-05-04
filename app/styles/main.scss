@@ -8,12 +8,9 @@ $icon-font-path: '../fonts/';
 // fonts
 @import "fonts.scss";
 
-// custom checkbox
-@import "custom-checkbox.css";
+@import "custom-checkbox.scss";
 
-//custom select
-@import "jquery-ui.min.css";
-
+@import "jquery-ui.scss";
 
 // big-bg
 html, body {

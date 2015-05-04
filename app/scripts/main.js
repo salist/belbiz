@@ -63,23 +63,3 @@
    }); 
 }());
 
-/*
-* Custom Select
-*/
-
-(function() {
-	var $selectBeast = $('#select-beast');
-
-	if($selectBeast.length > 0) {
-    	$selectBeast.selectmenu({
-          width: '100%',
-          change: function( event, ui ) {
-          	var city = ui.item.label,
-          		$checkboxList = $('.checkboxList');
-
-          	$checkboxList.hide();
-          	$('#' + city.toLowerCase()).show(400);
-          }
-        });
-	}
-}());
