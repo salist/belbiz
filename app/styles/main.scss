@@ -8,6 +8,12 @@ $icon-font-path: '../fonts/';
 // fonts
 @import "fonts.scss";
 
+// custom checkbox
+@import "custom-checkbox.css";
+
+//custom select
+@import "jquery-ui.min.css";
+
 
 // big-bg
 html, body {
@@ -31,7 +37,7 @@ body {
 
 /* CSS Animated Hamburger Icon */
 .nav-toggle {
-	z-index:100;
+	z-index:10001;
 	position: absolute; 
 	right: 10px; 
 	top: 35px;
@@ -154,30 +160,33 @@ body {
 
 /* fixed menu */
 .vertical-menu {
+	display: none;
 	z-index: 10000;
 	overflow: auto;
 	position: fixed;
 	top: 0;
-	right: -100%;
+	right: 0;
+	left: 0;
 	bottom: 0;
 	padding: 40px;
-	background: #242220;
+	background: rgba(228,110,26, 0.96);
 
 	ul {
 		margin: 0 0 25px 0;
 		padding: 0 0 10px 0;
-		border-bottom: 1px solid #a5a4a4;
+		border-bottom: 1px solid #fff;
 
 		li {
 			margin: 0;
 			padding: 0;
 			list-style: none;
+			text-align: center;
 
 			a {
 				display: inline-block;
 				margin: 0 0 25px 0;
-				color: #a5a4a4;
-				font: 16px/119% 'Raleway-Bold';
+				color: #fff;
+				font: 18px/117% 'Raleway-Bold';
 				text-transform: uppercase;
 
 				&:hover {
@@ -190,37 +199,110 @@ body {
 	}
 	.another-links {
 		border: 0;
+		text-align: center;
 
-		a {
-			text-transform: none;
+		li {
+			margin: 0 15px;
+			display: inline-block;
 		}
 	}
 }
 .menuShowed {
-	.vertical-menu {
-		right: 0;
-	}
-	.nav-toggle {
-		right: 252px;
-	}
-	.nav-toggle,
-	.vertical-menu {
-		-webkit-transition: right 0.4s ease;
-		   -moz-transition: right 0.4s ease;
-		     -o-transition: right 0.4s ease;
-		    -ms-transition: right 0.4s ease;
-		        transition: right 0.4s ease;
-	}
-}
-.nav-toggle,
-.vertical-menu {
-	-webkit-transition: right 0.4s ease;
-	   -moz-transition: right 0.4s ease;
-	     -o-transition: right 0.4s ease;
-	    -ms-transition: right 0.4s ease;
-	        transition: right 0.4s ease;
+	  overflow: hidden;
+	  .vertical-menu {
+	  	display: block;
+	  }
+	  .nav-toggle {
+	  	  background: rgba(93, 96, 97, 0.41);
+	  }
 }
 /* end fixed menu */
+
+/* custom-select */
+.custom-select {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	.checkboxList {
+		display: none;
+
+		&.minsk {
+			display: block;
+		}
+	}
+
+	.ui-selectmenu-button span.ui-selectmenu-text {
+	  border: 0;
+	  padding: 20px;
+	  border-radius: 1px;
+	  color: #adadad;
+	  font: 16px/119% "Raleway";
+	  background: #f2f2f2;
+	  outline: none;
+	}
+	.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+		&:focus {
+			outline: none;
+			border: 0;
+			border-radius: 0;		
+		}
+	}
+	.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+		border-radius: 0;
+		border: 0;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+
+}
+.ui-selectmenu-menu {
+	.ui-widget-content {
+		margin-top: 3px;
+		border: 0;
+		padding: 7px 20px;
+		border-radius: 1px;
+		color: #747070;
+		font: 13px/119% "Raleway";
+		background: #DDD;
+		outline: none;
+	}
+	.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+		border: 0;
+		margin:  0;
+		background: none;
+		font-weight: 400;
+	}
+}
+/* end custom-select */
+
+/* custom checkbox */
+.wrapp-checkbox {
+	[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+		top: -2px;
+		width: 23px;
+		height: 23px;
+		border-radius: 2px;
+		border: 1px solid #E46E2E;
+		background: none;
+		box-shadow: none;
+	}
+
+	[type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+		padding-left: 31px;
+		font: 16px/119% "Raleway";
+	}
+	[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {
+		color: #E46E2E;
+		left: 7px;
+	}
+	label:hover:before {
+		border: 1px solid #E46E2E!important;
+	}
+}
+	
+/* end custom checkbox */
 
 /* Pages */
 @import "main-page.scss";

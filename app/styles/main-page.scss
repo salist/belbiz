@@ -470,15 +470,19 @@
 		text-align: center;
 
 		.wrapp-image {
-			height:40px;
+			height:62px;
 			max-width: 126px;
 			margin: 0 auto;
 			padding: 70px 0 10px 0;
 			border-bottom: 1px solid #d8d8d8;
 			box-sizing: content-box;
 
-			img {
-				height: 40px;
+			a {
+				display: block;
+				line-height: 62px;
+				img {
+					max-width: 100%;
+				}
 			}
 		}
 
