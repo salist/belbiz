@@ -167,11 +167,11 @@ body {
 	bottom: 0;
 	padding: 40px;
 	background: rgba(228,110,26, 0.96);
+	text-align: center;
 
 	ul {
-		margin: 0 0 25px 0;
+		margin: 0;
 		padding: 0 0 10px 0;
-		border-bottom: 1px solid #fff;
 
 		li {
 			margin: 0;
@@ -195,8 +195,11 @@ body {
 		}
 	}
 	.another-links {
+		display: inline-block;
 		border: 0;
+		padding: 25px 0 0 0;
 		text-align: center;
+		border-top: 1px solid #fff;
 
 		li {
 			margin: 0 15px;
