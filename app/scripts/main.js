@@ -3,10 +3,27 @@
 *CSS Animated Hamburger Icon (click on hamburger)
 */
 (function() {
-	var $navToggle = $('#nav-toggle');
-	if($navToggle.length > 0) {
+	var $navToggle = $('#nav-toggle'),
+		$getInvolved = $('#get-involved'),
+		$body = $('body');
+
+	if($navToggle.length > 0 || $getInvolved.length > 0) {
 		$navToggle.on( 'click', function() {
-		    this.classList.toggle( 'active' );
+		    $(this).toggleClass( 'active' );
+		    $body.toggleClass('menuShowed'); //Show/Hide fixed menu
+		});
+
+		$getInvolved.on( 'click', function() {
+		    $navToggle.toggleClass( 'active' );
+		    $body.toggleClass('menuShowed'); //Show/Hide fixed menu
+		});
+	}
+
+	// if we clicked on anchor of the menu in main page than menu should close
+	if($('.main-page').length > 0) {
+		$('.vertical-menu a').on('click', function() {
+			$body.toggleClass('menuShowed'); //Show/Hide fixed menu
+			$navToggle.toggleClass( 'active' );
 		});
 	}
 }());
@@ -37,19 +54,6 @@
 }());
 
 
-/*
-* Show fixed menu
-*/
-
-(function() {
-	var $verticalMenu = $('#nav-toggle');
-
-	$verticalMenu.on('click', function(){
-		$('body').toggleClass('menuShowed');
-	});
-
-}());
-
 
 /* scroll to  */
 (function() {
@@ -63,3 +67,45 @@
    }); 
 }());
 
+
+
+/* Select */
+(function() {
+	var $selectBeast = $('#select-beast');
+
+    if($selectBeast.length > 0) {
+        $selectBeast.selectmenu({
+          width: '100%',
+          change: function( event, ui ) {
+            var city = ui.item.label,
+                $checkboxList = $('.checkboxList');
+
+            $checkboxList.hide();
+            $('#' + city.toLowerCase()).show(400);
+          }
+        });
+    }
+}());
+
+
+// carousel
+(function() {
+	var $carousel = $('.carousel');
+	if ($carousel.length > 0) {
+		$('.carousel').carousel({interval: 0});
+	}
+}());
+
+
+// carousel
+(function() {
+	var $slider1 = $('.slider1');
+	if ($slider1.length > 0) {
+		$slider1.bxSlider({
+                slideWidth: 200,
+                minSlides: 1,
+                maxSlides: 5,
+                slideMargin: 40
+              });
+	}
+}());

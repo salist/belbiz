@@ -63,7 +63,7 @@
     <div class="article">
         <!-- block Get ivolved -->
         <div class="block-form-get-ivolved formFileds">
-            <h2 id="open-form" class="blog-title text-center">Get involced</h2>
+            <h2 id="open-form" class="blog-title text-center">Get involved</h2>
             <form class="contact-form" name="">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -76,6 +76,23 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <input type="text" name="company" placeholder="Company">
+                    </div>
+                </div>
+                <div class="row custom-select">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <select class="" id="select-beast">
+                        <option>Minsk</option>
+                        <option>Madrid</option>
+                      </select>
+
+                      <div class="wrapp-checkbox checkboxList minsk" id="minsk">
+                          <p>
+                            <input type="checkbox" id="minsk1" checked="checked" />
+                            <label for="minsk1">TechMinsk</label>
+                          </p>
+                      </div>
+                      <div class="wrapp-checkbox checkboxList" id="madrid">
+                      </div>
                     </div>
                 </div>
                 <div class="row">
@@ -148,6 +165,7 @@
         <p>Bel.biz &copy; 2005-2015</p>
     </div>
 
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -155,10 +173,15 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
+        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+        <script type="text/javascript" src="libs/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="libs/jquery-ui.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+
 </body>
 </html>
